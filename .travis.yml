@@ -1,0 +1,9 @@
+language: ruby
+dist: trusty
+sudo: false
+before_install:
+  - gem install bundler && bundler -v
+script: bundle exec rspec
+rvm:
+  - 2.0.0
+  - 2.2.4
